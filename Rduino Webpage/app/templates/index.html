@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+		
+		<title>Rduino Lab</title>
+
+		<link href="{{url_for('static', filename='style.css')}}" rel="stylesheet">
+		<link href="{{url_for('static', filename='fonts/font-awesome.min.css')}}" rel="stylesheet">
+	</head>
+
+
+	<body>
+		<div class="site-content">
+
+			<header class="site-header">
+				<div class="container">
+					<a href="index" class="logo"><img src="{{ url_for('static', filename= 'images/rduino_logo.png')}}" alt="Rduino Lab"></a>
+					
+					<!-- Default snippet for navigation -->
+					<div class="main-navigation">
+						<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+						<ul class="menu">
+							<li class="menu-item current-menu-item"><a href="index">Home</a></li>
+							<li class="menu-item"><a href="about">About</a></li>
+							<li class="menu-item"><a href="https://gitlab.com/jamescwu/Rduino/branches">Code</a></li>
+							<li class="menu-item"><a href="documentation">Documentation</a></li>
+						</ul> <!-- .menu -->
+					</div> <!-- .main-navigation -->
+					
+					<div class="mobile-navigation"></div>
+				</div> <!-- .container -->
+			</header> <!-- .site-header -->
+
+			<main class="main-content">
+				<div class="hero">
+					<div class="container">
+						<img src="{{ url_for('static', filename= 'images/arduino.png')}}">
+						<!-- <div class="hero-content">
+							<span>Interfacing Arduino with the R programming language</span> <br>
+						</div> -->
+					</div>
+				</div> <!-- .hero -->
+
+				<div class="fullwidth-block">
+					<div class="container">
+						<div class="col-md-4">
+							<div class="feature">
+								<img src="{{ url_for('static', filename= 'images/analytics_icon.png')}}"" >
+								<h2 class="feature-title">Data Analysis</h2>
+								<p>We write scripts in a variety of languages (R, Python, Processing) to handle interesting analysis problems from data read in from our Arduinos.</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="feature">
+								<img src="{{ url_for('static', filename= 'images/hardware_icon.png')}}"" >
+								<h2 class="feature-title">Hardware</h2>
+								<p>We use the trendy open-source Arduino boards for collecting environment data and presenting curated audio and visual output.</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="feature">
+								<img src="{{ url_for('static', filename= 'images/integration_icon.png')}}"" >
+								<h2 class="feature-title">Full Integration</h2>
+								<p>We are working to create an R package called Rduino that fully integrates the R programming language with the Arduino board.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+
+		</div> <!-- .main-content -->
+		
+
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/app.js"></script>
+		
+	</body>
+
+</html>
